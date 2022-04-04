@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 662939566}
   - component: {fileID: 662939565}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PlayButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -609,7 +609,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1573819722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1803065783}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: StartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &662939566
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,7 +1454,7 @@ GameObject:
   - component: {fileID: 1734572261}
   - component: {fileID: 1734572260}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: LinkButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1511,7 +1523,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1757726219}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1803065783}
+        m_TargetAssemblyTypeName: MenuController, Assembly-CSharp
+        m_MethodName: OpenYoutubeLink
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1734572261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1696,6 +1720,7 @@ GameObject:
   - component: {fileID: 1803065781}
   - component: {fileID: 1803065780}
   - component: {fileID: 1803065779}
+  - component: {fileID: 1803065783}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1732,7 +1757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1785,6 +1810,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1803065783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803065778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b08c615164ccf4dc7b2f558f88b337db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2081913051 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6137955018833504403, guid: 4ee0183771c414eaf943b4480ac83055, type: 3}
